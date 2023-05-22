@@ -1,0 +1,41 @@
+extends base.pug 
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Neular's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Perfect your moves
+            div.card-box
+                div.card-img 
+                    img(src="./static/png1.png")
+                div.card-cont 
+                    p This is the best Dance academy
+        div.card
+            h3 Freestyle intend
+            div.card-box
+                div.card-img 
+                    img(src="./static/png2.png")
+                div.card-cont 
+                    p This is the best Dance academy
+        div.card
+            h3 Expert training
+             div.card-box
+                div.card-img 
+                    img(src="./static/png3.png")
+                div.card-cont 
+                    p This is the best Dance academy.                    
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="./static/sp1.png", alt="sponsor image", class="spimg")
+            img(src="./static/sp2.png", alt="sponsor image", class="spimg")
+            img(src="./static/sp3.png", alt="sponsor image", class="spimg")
+            img(src="./static/sp4.png", alt="sponsor image", class="spimg")
